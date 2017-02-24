@@ -136,6 +136,13 @@ input[type="submit"],.w3agile_contact_right_agileinfo p a,.w3_copy_right p a{
 .logo{
 	float:left;
 }
+
+.showreelText:hover{
+  position:absolute;
+  top: 50%;
+  left: 43%;
+  color: white;
+}
 .navigation-right{
 	float:right;
 	margin: 1.3em 0 0;
@@ -220,7 +227,6 @@ span.menu{
   border-style: solid;
   border-width: 6px;
   border-color: white;
-  /* margin-left: 20%; */
 }
 
 .showReelContainer img {
@@ -299,6 +305,10 @@ button.close {
     font-size: 1em;
     color: #212121;
 }
+.agileits_text{
+  color:white;
+  padding-top: 3px;
+}
 /* Underline From Center */
 .hvr-underline-from-center {
 	display: inline-block;
@@ -311,6 +321,7 @@ button.close {
 	backface-visibility: hidden;
 	-moz-osx-font-smoothing: grayscale;
 	position: relative;
+	max-width: 600px;
 	overflow: hidden;
 }
 .hvr-underline-from-center:before {
@@ -451,7 +462,7 @@ p.nostrud{
 	color:#999;
 }
 .agile_team_grid {
-    text-align: center;
+    /* text-align: center; */
 }
 .view {
     margin: 0;
@@ -645,6 +656,7 @@ p.nostrud{
 }
 .w3agile_gallery_grid {
     padding: 0;
+    /* height: 300px; */
 }
 .w3agile_gallery_grid figure {
     margin: 0;
@@ -654,17 +666,18 @@ p.nostrud{
     display: block;
     cursor: pointer;
     overflow: hidden;
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
 }
-.w3agile_gallery_grid figure:hover figcaption {
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-    filter: alpha(opacity=100);
-    opacity: 1;
-    -webkit-transform: rotate(0);
-    -moz-transform: rotate(0);
-    -o-transform: rotate(0);
-    -ms-transform: rotate(0);
-    transform: rotate(0);
-    top: 0;
+.w3agile_gallery_grid figure:hover {
+  -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
 }
 .w3agile_gallery_grid figcaption {
     -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
@@ -1041,7 +1054,7 @@ a.cinfo {
 		width: 28.8%;
 	}
 	.w3agile_gallery_grid figure {
-		height: 190.5px;
+		height: 189px;
 	}
 	.w3agile_gallery_grid figcaption p {
 		font-size: 13px;

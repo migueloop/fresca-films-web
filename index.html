@@ -80,7 +80,8 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
             <div class="col-md-4"></div>
             <div class="col-md-4 col-centered">
               <div class="showReelContainer">
-            		<img src="images/showreel.png" height="662" width="331">
+            		<img src="images/showreel2.png" height="662" width="331"/>
+                <span>showreel</span>
             	</div>
             </div>
             <div class="col-md-4"></div>
@@ -199,7 +200,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 
 			<div class="col-md-3 w3agile_gallery_grid">
 				<div class="w3agile_gallery_image">
-          <a href="#" class="sb hvr-underline-from-center" data-toggle="modal" data-target="#project2Modal">
+          <a href="#" class="hvr-underline-from-center" data-toggle="modal" data-target="#project2Modal">
 						<figure>
 							<img src="images/projects/FRAME VIDEO FRESCA REEL.png" alt="" class="img-responsive" />
 							<figcaption>
@@ -214,7 +215,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			</div>
 			<div class="col-md-3 w3agile_gallery_grid">
 				<div class="w3agile_gallery_image">
-					<a class="sb" href="images/10.jpg">
+					<a class="hvr-underline-from-center" href="images/10.jpg">
 						<figure>
 							<img src="images/projects/FRAME MIND SILENTH COREA.png" alt="" class="img-responsive" />
 							<figcaption>
@@ -227,7 +228,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			</div>
 			<div class="col-md-3 w3agile_gallery_grid">
 				<div class="w3agile_gallery_image">
-					<a class="sb"  href="images/11.jpg">
+					<a class="hvr-underline-from-center"  href="images/11.jpg">
 						<figure>
 							<img src="images/projects/FRAME_100_FEMMES.png" alt="" class="img-responsive" />
 							<figcaption>
@@ -240,7 +241,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			</div>
 			<div class="col-md-3 w3agile_gallery_grid">
 				<div class="w3agile_gallery_image">
-					<a class="sb"  href="images/12.jpg">
+					<a class="hvr-underline-from-center"  href="images/12.jpg">
 						<figure>
 							<img src="images/projects/FRAME_OMNIA.png" alt="" class="img-responsive" />
 							<figcaption>
@@ -253,7 +254,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			</div>
 			<div class="col-md-3 w3agile_gallery_grid">
 				<div class="w3agile_gallery_image">
-					<a class="sb"  href="images/13.jpg">
+					<a class="hvr-underline-from-center"  href="images/13.jpg">
 						<figure>
 							<img src="images/projects/FRAME_STAHL.png" alt="" class="img-responsive" />
 							<figcaption>
@@ -276,9 +277,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 		<div class="container">
 			<h3>Qui Som?</h3>
 			<div class="agile_team_grids">
-        <div class="col-md-3 agile_team_grid">
-        </div>
-				<div class="col-md-3 agile_team_grid">
+				<div class="col-md-4 col-md-offset-2 agile_team_grid">
 					<div class="view view-sixth">
 						<img src="images/esther.jpg" alt=" " class="img-responsive" />
 						<div class="mask">
@@ -286,11 +285,11 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<div class="agileits_social_icons">
 								<a href="https://www.linkedin.com/in/eangrill/" class="icon-button google-plus"><i class="fa fa-linkedin" aria-hidden="true"></i><span></span></a>
 							</div>
+              <span class="agileits_text">Esther Angill</span>
 						</div>
 					</div>
-					<h4>Esther Angill</h4>
 				</div>
-				<div class="col-md-3 agile_team_grid">
+				<div class="col-md-4 col-md-offset-2 agile_team_grid">
 					<div class="view view-sixth">
 						<img src="images/julia.jpg" alt=" " class="img-responsive" />
 						<div class="mask">
@@ -298,12 +297,10 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<div class="agileits_social_icons">
 								<a href="https://www.linkedin.com/in/j%C3%BAlia-rabadan-aymar-937baa114/?locale=en_US" class="icon-button twitter"><i class="fa fa-linkedin" aria-hidden="true"></i><span></span></a>
 							</div>
+              <span class="agileits_text">Júlia R. Aymar</span>
 						</div>
 					</div>
-					<h4>Júlia R. Aymar</h4>
 				</div>
-        <div class="col-md-3 agile_team_grid">
-        </div>
 				<div class="clearfix"> </div>
 			</div>
 		</div>
@@ -353,14 +350,6 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- here stars scrolling icon -->
 	<script type="text/javascript">
 		$(document).ready(function() {
-      $(window).scroll(function() {
-        if ($(document).scrollTop() > 50) {
-          $('.navigation').addClass('shrink');
-        } else {
-          $('.navigation').removeClass('shrink');
-        }
-      });
-
       $('#services').parallax("100%", 0.3);
 			$().UItoTop({ easingType: 'easeOutQuart' });
 
