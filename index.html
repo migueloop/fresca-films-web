@@ -46,7 +46,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <script src="js/jquery.vide.min.js"></script>
 	<div data-vide-bg="video/srix">
 		<div class="center-container">
-			<div class="navigation">
+			<div class="navigation sticky">
 				<div class="container">
 					<div class="logo">
 						<h1><a href="index.html">fresca films</a></h1>
@@ -353,19 +353,19 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- here stars scrolling icon -->
 	<script type="text/javascript">
 		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear'
-				};
-			*/
+      $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+          $('.navigation').addClass('shrink');
+        } else {
+          $('.navigation').removeClass('shrink');
+        }
+      });
+
       $('#services').parallax("100%", 0.3);
 			$().UItoTop({ easingType: 'easeOutQuart' });
 
 			});
 	</script>
-<!-- //here ends scrolling icon -->
+  <!-- //here ends scrolling icon -->
 </body>
 </html>

@@ -120,9 +120,19 @@ input[type="submit"],.w3agile_contact_right_agileinfo p a,.w3_copy_right p a{
 	background: rgba(0, 0, 0, 0.28);
 }
 .navigation{
-	padding:3em 0;
+	padding: 0em 0em;
 	background:#000;
 }
+.sticky{
+  float: right;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  /* border-top: 0; */
+}
+
 .logo{
 	float:left;
 }
@@ -148,7 +158,7 @@ input[type="submit"],.w3agile_contact_right_agileinfo p a,.w3_copy_right p a{
 	font-weight:bold;
 }
 .navigation {
-    padding:1em 0em;
+    padding: 0em 0em;
     background:rgba(0, 0, 0, 0.53);
 }
 span.menu{
@@ -1428,7 +1438,7 @@ a.cinfo {
 		margin-bottom:2em;
 	}
 }
-@media (max-width:480px){
+@media (max-width:1000px){
 	span.menu {
 		display: block;
 		cursor: pointer;
