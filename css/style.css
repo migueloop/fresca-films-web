@@ -238,8 +238,19 @@ span.menu{
     cursor:pointer;
 }
 
+#essencia {
+	background: url(../images/essencia-bg.png);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 140px 0;
+}
 
-
+#quisom{
+  background: url(../images/quisom-bg.png);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 140px 0;
+}
 /* Services Section */
 #services {
 	padding: 140px 0;

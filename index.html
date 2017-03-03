@@ -95,7 +95,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 		</div>
 	</div>
 
-  <div class="white">
+  <div id="essencia">
 		<div class="container">
     </hr></hr>
     </div>
@@ -260,11 +260,17 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	</div>
 <!-- //gallery -->
 
-
+<div id="quisom">
+  <div class="container">
+  </hr>
+  </hr>
+  </div>
+</div>
 <!-- team -->
+<div
 	<div class="team" id="team">
 		<div class="container">
-			<h3>Qui Som?</h3>
+      <h3>Qui Som?</h3>
 			<div class="agile_team_grids">
 				<div class="col-md-4 col-md-offset-2 agile_team_grid">
 					<div class="view view-sixth">
@@ -340,6 +346,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<script type="text/javascript">
 		$(document).ready(function() {
       $('#services').parallax("100%", 0.3);
+      $('#essencia').parallax("100%", 0.3);
+			$('#quisom').parallax("100%", 0.3);
+
 			$().UItoTop({ easingType: 'easeOutQuart' });
 
 			});
