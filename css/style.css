@@ -693,13 +693,13 @@ p.nostrud{
 .w3agile_gallery_grid figcaption {
     -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     filter: alpha(opacity=0);
-    opacity: 0;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-	top: -100%;
-    background: rgba(0,0,0,.5);
-    color: #fff;
+    /* opacity: 0; */
+    /* position: absolute; */
+    /* height: 100%; */
+    /* width: 100%; */
+    /* top: -100%; */
+    /* background: rgba(0,0,0,.5); */
+    color: #a94442;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     -o-transition: all .5s ease;
@@ -718,10 +718,10 @@ p.nostrud{
 }
 .w3agile_gallery_grid figcaption h4 {
     color: #fca311;
-    padding: 0px 20px;
-    margin-bottom: 0;
-    position: relative;
-    left: 100%;
+    /* padding: 0px 20px; */
+    /* margin-bottom: 0; */
+    /* position: relative; */
+    /* left: 100%; */
     margin-top: 37px;
     font-size: 30px;
     margin: 2em 0 1em;
