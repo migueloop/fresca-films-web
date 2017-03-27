@@ -8,7 +8,7 @@ body{
 	margin:0;
 	padding:0;
 	background:#f6f6f6;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   color: #777;
@@ -302,6 +302,11 @@ span.menu{
 	background-size: cover;
 	background-attachment: fixed;
 }
+
+#serveis {
+  background-color:  white;
+}
+
 #services .service {
 	padding: 20px 10px;
 }
@@ -433,7 +438,7 @@ button.close {
 .banner-bottom-image-text-left h3,.w3agile_contact_left h3,.agileits_about_grid_left h3{
   font-size: 2.5em;
   color: #212121;
-  line-height: 1.5em;
+  /* line-height: 1.5em; */
   position: relative;
   text-align: center;
   padding-bottom: 0.5em;
@@ -484,16 +489,16 @@ button.close {
 
 
 .team,.gallery,.testimonials,.about{
-	padding:5em 0;
-  background-color: #fff;
+	padding: 5em 0;
+	background-color: #fff;
 }
 .team h3,.team-bottom h3,.gallery h3,.testimonials h3{
 	font-size: 2.5em;
-    color: #FCA311;
-    padding-bottom:.7em;
-    position: relative;
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
+	color: black;
+	padding-bottom: 1em;
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
 	text-transform: capitalize;
 }
 
@@ -753,9 +758,11 @@ p.nostrud{
 
 
 	.caption-style-4 .caption{
+		width: 100%;
 		cursor: pointer;
 		position: absolute;
 		opacity: 0;
+		float: left;
 		-webkit-transition:all 0.45s ease-in-out;
 		-moz-transition:all 0.45s ease-in-out;
 		-o-transition:all 0.45s ease-in-out;
@@ -764,7 +771,7 @@ p.nostrud{
 	}
 
 	.caption-style-4 img{
-		width: 450px;
+		width: 100%;
 		height: 300px;
 		-webkit-transition:all 0.25s ease-in-out;
 		-moz-transition:all 0.25s ease-in-out;
@@ -775,7 +782,7 @@ p.nostrud{
 	.caption-style-4 .blur{
 		background-color: rgba(0,0,0,0.65);
 		height: 300px;
-		width: 450px;
+		width: 100%;
 		z-index: 5;
 		position: absolute;
 	}
@@ -788,11 +795,12 @@ p.nostrud{
 		z-index: 10;
 		color: #fff;
 		position: absolute;
-		width: 450px;
-		height: 300px;
+		/* width: 450px; */
+		/* height: 300px; */
 		text-align: center;
 		top:100px;
-    padding:10px;
+		padding:10px;
+		width: 100%;
 	}
 
 /*-- //gallery --*/
@@ -877,17 +885,17 @@ div#myTabContent {
 /*-- //testimonials --*/
 /*-- contact --*/
 .w3agile_contact_left{
-	padding: 5em 4em 5em 13em;
+	padding: 0em 4em 0 4em;
 }
 .w3agile_contact_right{
-	padding: 5em 0em 5em 0em;
-	font-size: 1.5em;
+	/* padding: 5em 0em 5em 0em; */
+	/* font-size: 1.5em; */
 }
 
 .w3agile_contact_right h3{
   font-size: 2.5em;
   color: #f1f1f1;
-  line-height: 1.5em;
+  /* line-height: 1.5em; */
   position: relative;
   padding-bottom: .5em;
   text-align: center;
@@ -1042,7 +1050,7 @@ a.cinfo {
 	.banner-bottom-image-text-left {
 		padding: 4em 10em 3.95em 11em;
 	}
-	.w3agile_gallery_grid figure {
+		.caption-style-4 img{
 		height: 243.5px;
 	}
 	.w3agile_gallery_grid figcaption h4 {
@@ -1053,10 +1061,10 @@ a.cinfo {
 		font-size: 8px;
 	}
 	.w3agile_contact_left {
-		padding: 5em 4em 5em 11em;
+		padding: 5em 4em 4em 5em;
 	}
 	.w3agile_contact_right {
-		padding: 5em 4em 5em 11em;
+		padding: 5em 4em 5em 5em;
 	}
 }
 @media (max-width: 1366px){
@@ -1079,9 +1087,10 @@ a.cinfo {
 	.w3_book_date {
 		width: 37.3%;
 	}
-	.w3agile_gallery_grid figure {
+	.caption-style-4 img{
 		height: 231.5px;
 	}
+
 }
 @media (max-width: 1280px){
 	.team, .gallery, .testimonials, .about {
@@ -1099,7 +1108,7 @@ a.cinfo {
 	.w3_working_time {
 		width: 28.8%;
 	}
-	.w3agile_gallery_grid figure {
+	.caption-style-4 img{{
 		height: 189px;
 	}
 	.w3agile_gallery_grid figcaption p {
@@ -1165,7 +1174,7 @@ a.cinfo {
 	.w3_book_date {
 		width: 32%;
 	}
-	.w3agile_gallery_grid figure {
+	.caption-style-4 img{
 		height: 181.5px;
 	}
 	.w3agile_gallery_grid figcaption h4 {
@@ -1223,7 +1232,7 @@ a.cinfo {
 	.w3_book_date {
 		width: 31%;
 	}
-	.w3agile_gallery_grid figure {
+	.caption-style-4 img{
 		height: 172.5px;
 	}
 	.w3agile_gallery_grid figcaption h4 {
@@ -1342,17 +1351,19 @@ a.cinfo {
 		float: left;
 		width: 50%;
 	}
-	.w3agile_gallery_grid figure {
+	.caption-style-4 img{
 		height:333px;
 	}
-	.w3agile_gallery_grid figcaption h4 {
+	.w3agile_gallery_grid
+		figcaption h4 {
 		font-size: 2em;
 		margin-top: 105px;
 	}
 	.nav-tabs {
 		width: 55%;
 	}
-	.tabcontent-grids p {
+	.tabcontent-grids
+		p {
 		width: 100%;
 	}
 	.w3agile_contact_left,.w3agile_contact_right {
@@ -1362,17 +1373,20 @@ a.cinfo {
 	.w3_copy_right {
 		margin: 3em 0 0;
 	}
+		width:;
 }
 @media (max-width:800px){
 	.banner-bottom-image-text-left {
 		padding: 3em 3em;
 	}
-	.w3agile_gallery_grid figure {
+		.caption-style-4 img{
 		height: 268px;
 	}
-	.w3agile_gallery_grid figcaption h4 {
+	.w3agile_gallery_grid
+		figcaption h4 {
 		margin-top: 75px;
 	}
+		width:;
 }
 @media (max-width:768px){
 	.team, .gallery, .testimonials, .about {
@@ -1389,7 +1403,7 @@ a.cinfo {
 	.reservation input[type="submit"] {
 		margin: 3em 0 0 18em;
 	}
-	.w3agile_gallery_grid figure {
+	.caption-style-4 img{
 		height: 249px;
 	}
 	.w3agile_gallery_grid figcaption h4 {
@@ -1442,7 +1456,7 @@ a.cinfo {
 	.reservation input[type="submit"] {
 		margin: 2em 0 0 14em;
 	}
-	.w3agile_gallery_grid figure {
+		.caption-style-4 img{
 		height: 213px;
 	}
 	.w3agile_gallery_grid figcaption h4 {
@@ -1594,9 +1608,10 @@ a.cinfo {
 	.w3agile_gallery_grids,.testimonials-grids,.w3_copy_right {
 		margin: 2em 0 0;
 	}
-	.w3agile_gallery_grid figure {
-		height: 317px;
-	}
+  .caption-style-4 img{
+  width: 250px;
+  height: 200px;
+ }
 	.w3agile_gallery_grid figcaption h4 {
 		margin-top: 110px;
 	}
@@ -1605,6 +1620,7 @@ a.cinfo {
 	}
 	.w3agile_contact_left, .w3agile_contact_right {
 		padding: 2em;
+		/* height: 100%; */
 	}
 	.w3agile_contact_left p {
 		margin: 2em 0 2em;
@@ -1612,4 +1628,5 @@ a.cinfo {
 	.w3agile_contact_left input[type="submit"] {
 		width: 50%;
 		margin: 2e
-n: 2e
+
+}
